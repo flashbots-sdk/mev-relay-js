@@ -15,7 +15,7 @@ The relay provides new JSON-RPC methods for interfacing with Flashbots. They are
   "jsonrpc": "2.0",
   "id": 1,
   "method": "eth_sendBundle",
-  "params": [signedTxs, blockNumber, minTimestamp, maxTimestamp]
+  "params": [signedTxs, blockNumber, minTimestamp]
 }
 ```
 
