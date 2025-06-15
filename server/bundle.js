@@ -11,7 +11,7 @@ const BLACKLIST = [
   '0x7f367cc41522ce07553e823bf3be79a889debe1b'
 ]
 
-const MAX_DISTINCT_TO = 2
+const MAX_DISTINCT_TO = 3
 
 function checkBlacklistTx(rawTx) {
   const tx = ethers.utils.parseTransaction(rawTx)
@@ -31,6 +31,7 @@ function checkBlacklist(bundle) {
 
 function checkDistinctAddresses(bundle) {
   const fromAddresses = {}
+
   const toAddresses = {}
   bundle.forEach((rawTx) => {
     const tx = ethers.utils.parseTransaction(rawTx)
