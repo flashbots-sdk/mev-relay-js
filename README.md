@@ -8,7 +8,6 @@ This relay implementation was deprecated in the v2 relay upgrade in favor of a s
 
 [This is the relay entrypoint](server/main.js). The public flashbots relay is available at https://relay.flashbots.net. See https://github.com/flashbots/ethers-provider-flashbots-bundle for a library to help you call this.
 
-The relay provides new JSON-RPC methods for interfacing with Flashbots. The api reference is available on the [flashbots documentation](https://docs.flashbots.net/flashbots-auction/searchers/advanced/rpc-endpoint/)
 
 ## Miners
 

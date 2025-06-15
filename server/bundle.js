@@ -1,4 +1,4 @@
-const { ethers } = require('ethers')
+
 const _ = require('lodash')
 const { keccak256 } = require('ethers/lib/utils')
 
@@ -18,10 +18,6 @@ const BLACKLIST = [
   '0x9f4cda013e354b8fc285bf4b9a60460cee7f7ea9'
 ]
 
-function checkBlacklistTx(tx) {
-  return (
-    (tx.to && _.includes(BLACKLIST, tx.to.toString().toLowerCase())) || (tx.from && _.includes(BLACKLIST, tx.from.toString().toLowerCase()))
-  )
 }
 
 function checkBlacklist(txs) {
@@ -35,9 +31,6 @@ function checkBlacklist(txs) {
   return false
 }
 
-function getParsedTransactions(rawTxs) {
-  return rawTxs.map((rawTx) => {
-    return ethers.utils.parseTransaction(rawTx)
   })
 }
 
