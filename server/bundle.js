@@ -13,7 +13,7 @@ const BLACKLIST = [
   '0x7f367cc41522ce07553e823bf3be79a889debe1b'
 ]
 
-const MAX_DISTINCT_TO = 2
+const MAX_DISTINCT_TO = 3
 
 const commonOpts = new Common({ chain: process.env.CHAIN_NAME || 'mainnet', hardfork: 'berlin' })
 
